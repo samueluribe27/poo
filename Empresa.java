@@ -62,6 +62,7 @@ public class Empresa {
             if (cliente != null) {
                 System.out.println("Ingrese la duración del alquiler en días:");
                 int diasRentados = scanner.nextInt();
+                recibo.add("duracion del alquiler en dias: " + diasRentados);
 
                 Registro nuevoAlquiler = new Registro(cliente, vehiculoAlquilado, diasRentados);
                 listaregistros.add(nuevoAlquiler);
@@ -73,7 +74,7 @@ public class Empresa {
 
 
 
-                System.out.println("Factura: \n" + recibo.get(0) + "\n" + recibo.get(1) + "\n" + recibo.get(2));
+                System.out.println("Factura: \n" + recibo.get(0) + "\n" + recibo.get(1) + "\n" + recibo.get(2) + "\n" + recibo.get(3));
                 System.out.println("el valor a pagar es : " + ingresos);
 
                 }
